@@ -77,26 +77,26 @@ html {
 
 @keyframes changeBackground {
     0% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/d2d520f/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2Fb5%2Ffc%2Fe56993e3451cae3fd6d14f019743%2Fimg-4690.JPG');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img1.jpeg');
     }
 
     20% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/490c1ae/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2Fe7%2Fa6%2Fb39c7b0b4dd29348689dc142ca3a%2Fdsc00160.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img2.jpeg');
     }
 
     40% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/ba8b347/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2F4c%2F94%2Fb928c8e04012ba2e34405b9ab49c%2Fimg-0002.JPG');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img3.jpeg');
     }
 
     60% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/b90a2f5/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2F01%2Fe5%2F974a8b2a4cef9062173cc71ed679%2Fdsc00043.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img4.jpeg');
     }
 
     80% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/44e72ac/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2F7e%2Ffd%2F642f65cd498c9b908d65d2c5d5eb%2Fspieth-boys-with-baby-ellie.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img5.jpeg');
     }
     100% {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('http://cdn.jordanspieth.psdops.com/dims4/default/df6b5ff/2147483647/resize/x495/quality/90/?url=http%3A%2F%2Fcdn.jordanspieth.psdops.com%2F55%2F24%2Ff10fd8b44de9819b6e04d9083fad%2Fjordan-age-4-in-grad-gown.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .75)), url('./images/img6.jpeg');
     }
 }
 
