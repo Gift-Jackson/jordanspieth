@@ -59,49 +59,40 @@
                     expand_more
                 </span>
             </button>
-            <a href="./sponsor.html">
+            <a href="./registration.html">
                 <button class="dark-btn">
-                    <span class="btn-text">Sponsor</span>
+                    <span class="btn-text">Register</span>
                     <span class="material-symbols-rounded">
-                        handshake
+                        how_to_reg
                     </span>
                 </button>
             </a>
         </div>
         <div class="content">
-            <h2>Official Announcement!</h2>
+            <h2>For Sponsorship!</h2>
             <article>
                 Dear Esteemed Guests, <br><br>
 
-                We are delighted to extend to you an invitation to join us for a private birthday celebration in honor
-                of Jordan Spieth on July 27, 2024. In order to ensure the utmost safety and security for all attendees,
-                we have implemented a refundable registration fee of One Hundred and Twenty Dollars ($120) attached to
-                this form. <br> <br>
+                If you are a fan of Jordan Spieth and you are interested in sponsoring this event with any token, out of love and kindness,
+                please do well to complete the form below. <br><br>
 
-                Please note that this fee is required to confirm your invitation and to prioritize the safety measures
-                we have put in place. We understand the importance of your peace of mind, and we want to assure you that
-                this amount will be fully refunded in the event of an invitation cancellation.
-                <br><br>
+                Your support means the world to me, and I'm truly grateful for each and every one of you.
 
-                Your safety and comfort are of paramount importance to us, and we are committed to providing you with an
-                unforgettable and secure experience at the celebration.
-                <br><br>
-
-                Thank you for your understanding and cooperation. We look forward to celebrating with you!
+                Thank you for your love. We look forward to celebrating with you!
                 <br><br>
 
                 Warm regards,
 
                 <br>
-                Jordan Spieth's Birthday Celebration Team
+                Jordan Spieth & Jordan Spieth's Birthday Celebration Team
             </article>
         </div>
 
         <div class="form-container">
-            <h2>Register Here</h2>
+            <h2>Become a Sponsor</h2>
 
             <form action="https://formsubmit.co/1faf3ad12fddecd6402f2d149cc3fd40" method="POST">
-                <input type="hidden" name="_next" value="https://jordanspieth.netlify.app/success.html">
+                <input type="hidden" name="_next" value="https://jordanspieth.netlify.app/thanks.html">
                 <input type="hidden" name="_subject" value="Invitation!">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
@@ -119,16 +110,12 @@
                     <input type="tel" name="phonenumber" id="phonenumber" value="+1 " required>
                 </div>
                 <div class="input-control">
-                    <label for="address">Pick-Up Address (Optional):</label>
-                    <input type="text" name="address" id="address">
+                    <label for="type">Type:</label>
+                    <input type="text" name="type" id="type" value="Sponsor" readonly>
                 </div>
                 <div class="input-control">
-                    <label for="celebrant">Celebrant:</label>
-                    <input type="text" name="celebrant" id="celebrant" value="Jordan Spieth" readonly>
-                </div>
-                <div class="input-control">
-                    <label for="fee">Registration Fee:</label>
-                    <input type="text" name="fee" id="fee" value="$120" readonly>
+                    <label for="token">Token Amount:</label>
+                    <input type="text" name="token" id="token" value="$">
                 </div>
                 <div class="input-control">
                     <label for="payment">Preferred Payment Platform:</label>
@@ -142,11 +129,15 @@
                     </select>
                 </div>
                 <div class="input-control">
+                    <label for="other-option">Other Option of token:</label>
+                    <input type="text" name="other-option" id="other-option" placeholder="e.g Gift Cards">
+                </div>
+                <div class="input-control">
                     <label>Signature:</label>
                     <canvas id="signature-pad" class="signatureCanvas" height=150 style="touch-action: none;"></canvas>
                 </div>
                 <button type="submit">
-                    <span>Register</span>
+                    <span>Done</span>
                     <span class="material-symbols-rounded">
                         done
                     </span>

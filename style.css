@@ -20,7 +20,7 @@
     --text-color: #4a4a4a;
     --border: #ccc;
     --border-focus: #bbb;
-    --header-color: rgba(205, 133, 63, .75);
+    /* --header-color: rgba(205, 133, 63, .75); */
     --bg-color-2: rgba(205, 133, 63, .2);
 }
 
@@ -68,11 +68,11 @@ html {
 }
 
 .top-section {
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: changeBackground 10s ease-in-out infinite;
+    animation: changeBackground 15s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 }
 
 @keyframes changeBackground {
@@ -107,7 +107,7 @@ header {
 
 header.alt {
     padding: 0 2rem;
-    background-color: var(--header-color);
+    background-color: var(--dark);
 }
 
 main {
@@ -130,14 +130,13 @@ button {
 }
 
 button:active {
-    transform: scale(.9);
     filter: brightness(120%);
 }
 
 .contact-links {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .contact-links a i {
@@ -148,13 +147,14 @@ button:active {
 .hero {
     height: calc(90vh - 80px);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .hero h1 {
-    font-size: clamp(1.875rem, 0.9821rem + 2.8571vw, 3.125rem);
+    font-size: clamp(1.5625rem, 0.8929rem + 2.1429vw, 2.5rem);
     color: var(--white);
 }
 
@@ -162,21 +162,36 @@ button:active {
     color: var(--white);
 }
 
-.hero-btn {
+.cta-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin: 2em auto;
-    padding: 1rem 2em;
-    border: 0;
-    background-color: var(--primary-color);
+}
+
+.cta-btns button {
+    padding: 1rem 2rem;
     border-radius: 50px;
 }
 
-.hero-btn span {
+.cta-btns button span {
     color: var(--white);
+}
+
+.btn-1{
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.btn-2{
+    background-color: var(--primary-color);
+    border: 0;
 }
 
 #countdown {
     color: var(--primary-color);
-    border: 1px dashed var(--white);
+    /* border: 1px dashed var(--white); */
     margin-top: 1rem;
     border-radius: 50px;
 }
@@ -275,9 +290,9 @@ select {
     background-color: var(--bg-color-2);
     padding: 1rem;
     position: relative;
-    transform: translateY(-2%);
+    transform: translateY(-10%);
     opacity: .7;
-    animation: content .2s linear 1 forwards;
+    animation: content .2s ease-in-out 1 forwards;
 }
 
 @keyframes content {
@@ -301,8 +316,23 @@ select {
     right: 0.5rem;
 }
 
-.toggleMemo {
+.flex{
     margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark-btn{
+    background-color: var(--dark);
+    padding: .5rem;
+    width: 120px;
+    border: 0;
+}
+.dark-btn span{
+    color: var(--white);
+}
+
+.toggleMemo {
     padding: .5rem;
     border: 0;
     background-color: var(--primary-color);
@@ -320,6 +350,19 @@ select {
     transform: rotate(180deg);
 }
 
+.sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+}
+.sponsors img{
+    height: 70px;
+}
+
 
 
 @media (max-width:768px) {
@@ -329,6 +372,22 @@ select {
 
     .form-container {
         width: 100%;
+    }
+    .cta-btns{
+        flex-direction: column;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .cta-btns button{
+        width: 80%;
+        margin: auto;
+    }
+    .contact-links{
+        gap: 1rem;
+    }
+    header{
+        padding: 0 1rem;
     }
 
 }
